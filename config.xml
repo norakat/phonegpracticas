@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+	xmlns:gap = "http://phonegap.com/ns/1.0"
+	id 		  = "com.phonegap.SitioPracticas"
+	version   = "1.0.0">
+	
+<name>Sitio PG Practicas</name>
+
+<description>
+Sitio para Practicas en PhoneGap Build
+</description>
+
+<author href="https://github.com/norakat" email="nora.barretom@gmail.com">Nora Kat
+</author>
+
+</widget>
