@@ -6,13 +6,13 @@
 <link href="jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
 <script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
 <script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
-<link rel="StyleSheet" href="CSS/estilos.css" type="text/css">
+<link href="CSS/estiloss.css" rel="stylesheet" type="text/css">
 </head> 
 <body> 
 
 <div data-role="page" id="page">
 	<div data-role="header">
-		<h1>Aplicaciones</h1>
+		<img src="Imagenes/kat.png" width="800" height="100"  alt=""/>
 	</div>
 	<div data-role="content">	
 		<ul data-role="listview">
@@ -21,7 +21,7 @@
 		</ul>		
 	</div>
 	<div data-role="footer">
-		<h4>Copyright &copy;</h4>
+		<h4>Copyright &copy; 2015</h4>
 	</div>
 </div>
 
@@ -30,11 +30,78 @@
 		<h1>Aplicaciones Android</h1>
 	</div>
 	<div data-role="content">	
-		<p><img src="Imagenes/android.jpg" alt="Android"></p>
-        <p><a href="http://developer.android.com/sdk/index.html">App Developer</a>	
+		<p class="img"><img src="Imagenes/android.jpg" alt="Android"></p>
+        <p>
+<h3>Android Studio Overview</h3>
+Android Studio is the official IDE for Android application development, based on IntelliJ IDEA. On top of the capabilities you expect from IntelliJ, Android Studio offers:
+<ul>
+<li>Flexible Gradle-based build system</li>
+<li>Build variants and multiple apk file generation</li>
+<li>Code templates to help you build common app features</li>
+<li>Rich layout editor with support for drag and drop theme editing</li>
+<li>'lint' tools to catch performance, usability, version compatibility, and other problems</li>
+<li>ProGuard and app-signing capabilities</li>
+<li>Built-in support for Google Cloud Platform, making it easy to integrate Google Cloud Messaging and App Engine</li>
+<li>And much more</li>
+</ul>
+<p>
+If you're new to Android Studio or the IntelliJ IDEA interface, this page provides an introduction to some key Android Studio features.
+</p>
+<p>
+For specific Android Studio how-to documentation, see the pages in the Workflow section, such as Managing Projects from Android Studio and Building and Running from Android Studio. For a summary of the latest changes to Android Studio, see the Android Studio Release Notes.
+</p>
+
+<h3>Project and File Structure</h3>
+<h5>Android project view</h5>
+<p>
+By default, Android Studio displays your project files in the Android project view. This view shows a flattened version of your project's structure that provides quick access to the key source files of Android projects and helps you work with the Gradle-based build system. The Android project view:
+</p>
+<p>
+<ul>
+<li>Shows the most important source directories at the top level of the module hierarchy.</li>
+<li>Groups the build files for all modules in a common folder.</li>
+<li>Groups all the manifest files for each module in a common folder.</li>
+<li>Shows resource files from all Gradle source sets.</li>
+<li>Groups resource files for different locales, orientations, and screen types in a single group per resource type.</li>
+</ul>
+<p class="img"><img src="Imagenes/projectview01.png" alt="projectview01"></p>
+<p>
+The Android project view shows all the build files at the top level of the project hierarchy under Gradle Scripts. Each project module appears as a folder at the top level of the project hierarchy and contains these four elements at the top level:
+</p>
+<ul>
+<li>java/ - Source files for the module.</li>
+<li>manifests/ - Manifest files for the module.</li>
+<li>res/ - Resource files for the module.</li>
+<li>Gradle Scripts/ - Gradle build and property files.</li>
+</ul>
+<p>
+For example, Android project view groups all the instances of the ic_launcher.png resource for different screen densities under the same element.
+</p>
+<p>
+Note: The project structure on disk differs from this flattened representation. To switch to back to the segregated project view, select Project from the Project drop-down.
+</p>
+<p>
+<h3>Android Build System</h3>
+The Android build system is the toolkit you use to build, test, run and package your apps. This build system replaces the Ant system used with Eclipse ADT. It can run as an integrated tool from the Android Studio menu and independently from the command line. You can use the features of the build system to:
+</p>
+<p><ul>
+<li>Customize, configure, and extend the build process.</li>
+<li>Create multiple APKs for your app with different features using the same project and modules.</li>
+<li>Reuse code and resources across source sets.</li>
+</ul></p>
+<p>
+The flexibility of the Android build system enables you to achieve all of this without modifying your app's core source files. To build an Android Studio project, see Building and Running from Android Studio. To configure custom build settings in an Android Studio project, see Configuring Gradle Builds.
+</p>
+<p>
+<h3>Debug and Performance</h3>
+Android Studio provides a number of improvements to assist you in debugging and improving the performance of your code, including an improved virtual device management, inline debugging, and performance analysis tools.
+</p>
+
+</p>
+        <p class="centrar">For more information, go to: <a href="http://developer.android.com/sdk/index.html">Android App Developer</a>	
 	</div>
 	<div data-role="footer">
-		<h4>Copyright &copy;</h4>
+		<h4>Copyright &copy; 2015</h4>
 	</div>
 </div>
 
@@ -43,11 +110,55 @@
 		<h1>Aplicaciones iOS</h1>
 	</div>
 	<div data-role="content">	
-		<p><img src="Imagenes/ios.jpg" alt="iOS"></p>
-        <p><a href="https://developer.apple.com/ios/download/">App Developer</a>			
+		<p class="img"><img src="Imagenes/ios.jpg" alt="ios"></p>
+        <p>
+<h3>Xcode</h3>
+Xcode is a complete developer toolset for creating apps for Mac, iPhone, iPad and Apple Watch. Xcode brings user interface design, coding, testing, debugging, and submitting to the App Store all into a unified workflow.</p>
+<p>
+<h3>Downloading and Updating Xcode and SDKs</h3>
+The current release of Xcode is available as a free download from the Mac App Store. The Mac App Store will notify you when an update is available or you can have OS X update automatically as it becomes available.
+</p>
+<p>
+The latest beta versions of Xcode can be downloaded from the Xcode download page. Previous versions of Xcode can also be downloaded here. To download beta or previous versions of Xcode, simply sign in with your Apple ID. Program membership is not required.
+</p>
+<p>
+<h3>Providing Feedback and Reporting Bugs</h3>
+Your feedback goes a long way towards making Xcode even better. With Apple Bug Reporter, you can report issues or request enhancements to APIs and tools. Include detailed information about issues, including the system and developer tools version information, and any relevant crash logs or console messages.To provide feedback or ask questions, post your questions and comments on the Apple Developer Forums.
+</p>
+<p>
+<h3>Submitting Apps to the App Store using Xcode</h3>
+If you're an Apple Developer Program member, Xcode provides an integrated workflow to prepare and submit apps to App Store. You should use the latest version of Xcode available on the Mac App Store to submit your apps, or when available, the latest GM seed release from the Xcode download page. For more information, read the App Distribution Guide.
+</p>
+<p>
+Do not submit apps built using beta software, as beta versions of Xcode, Operating Systems, and SDKs are for development and testing only.
+</p>
+<p>
+<h3>Invalid Private Key and Certificate Pairing</h3>
+If you received an error message saying, "Xcode could not find a valid private-key/certificate pair for this profile in your keychain." This error message indicates that the Keychain Access application on your Mac is missing either the public or private key for the certificate you are using to sign your app.
+</p>
+<p>
+This often happens when you are trying to sign and build your app from a different Mac than the one you originally used to request your code signing certificate. It can also happen if your certificate has expired or has been revoked. Ensure that your app's provisioning profile contains a valid code signing certificate, and that the Keychain Access application on your Mac contains that certificate, the private key originally used to generate that certificate, and the WWDR Intermediate Certificate.
+</p>
+<p>
+For instructions on how to resolve this and other code signing erros, review the Code Signing Support page.
+</p>
+<p>
+<h3>Learn More</h3>
+The Apple developer website contains a wealth of documentation, videos, and community-based information to help you develop with Apple technologies using Xcode.
+</p>
+<ul>
+<li>Documentation and Sample Code</li>
+<li>Video Presentations</li>
+<li>Developer Forums</li>
+</ul>
+<p>
+<h3>Apple Security Updates</h3>
+For information on the security content of Xcode updates, visit the Apple security updates page.
+</p>
+        <p class="centrar">For more information, visit: <a href="https://developer.apple.com/ios/download/">Apple App Developer</a>			
 	</div>
 	<div data-role="footer">
-		<h4>Copyright &copy;</h4>
+		<h4>Copyright &copy; 2015</h4>
 	</div>
 </div>
 
